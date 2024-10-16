@@ -26,10 +26,49 @@
     #d45df0
   );
 }
-.key {
-  background-image: url("../images/key.jpg");
-  background-repeat: no-repeat;
-  height: 750px;
-  width: 1920px;
-  margin-top: 10px;
+
+@font-face {
+  font-family: "acme";
+  src: url("/fonts/Acme-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "aladin";
+  src: url("/fonts/Aladin-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "cormorantInfantLight";
+  src: url("/fonts/CormorantInfant-Light.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "cormorantInfantReg";
+  src: url("/fonts/CormorantInfant-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "cormorantInfantBold";
+  src: url("/fonts/CormorantInfant-Bold.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "ewert";
+  src: url("/fonts/Ewert-Regular.ttf"), format("truetype");
+}
+
+@font-face {
+  font-family: "frederickaTheGreat";
+  src: url("/fonts/FrederickatheGreat-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "jomhuria";
+  src: url("/fonts/Jomhuria-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "kalnia";
+  src: url("/fonts/KalniaGlaze-VariableFont_wdth,wght.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "pacifico";
+  src: url("/fonts/Pacifico-Regular.ttf"), format("truetype");
+}
+@font-face {
+  font-family: "playwrite";
+  src: url("/fonts/PlaywriteDEGrund-VariableFont_wght.ttf"), format("truetype");
 }
