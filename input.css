@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+.hero {
+  background: #fe4f5480;
+  background: -webkit-linear-gradient(
+    -45deg,
+    #fe4f54,
+    #ff862e,
+    #ffba38,
+    #8fd33b,
+    #3bd5d3,
+    #4583ee,
+    #d45df0
+  );
+  background: linear-gradient(
+    -45deg,
+    #fe4f54,
+    #ff862e,
+    #ffba38,
+    #8fd33b,
+    #3bd5d3,
+    #4583ee,
+    #d45df0
+  );
+}
+
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");
