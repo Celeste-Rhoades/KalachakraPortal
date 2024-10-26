@@ -43,7 +43,12 @@
   background-size: 300% 300%;
   background-clip: text;
 }
-
+.mobile-gradient {
+  background: linear-gradient(
+    to top
+      (#fe4f54, #ff862e, #ffba38, #8fd33b, #fe4f54, #ff862e, #ffba38, #8fd33b)
+  );
+}
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");
