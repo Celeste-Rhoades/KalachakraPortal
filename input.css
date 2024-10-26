@@ -26,6 +26,24 @@
   );
 }
 
+.gradient-text {
+  background: linear-gradient(
+    to top,
+    #6b21a8,
+    #3bd5d3,
+    #4583ee,
+    #6b21a8,
+    #3bd5d3,
+    #4583ee,
+    #6b21a8,
+    #3bd5d3,
+    #4583ee,
+    #6b21a8
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
+
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");
