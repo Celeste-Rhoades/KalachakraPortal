@@ -32,6 +32,7 @@ module.exports = {
         brightGreen: "#8fd33b",
         periwinkle: "#4583ee",
         brightPurple: "#d45df0",
+        seafoam: "#93E9BE",
       },
       keyframes: {
         gradient: {
