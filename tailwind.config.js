@@ -9,6 +9,7 @@ module.exports = {
       lg: "976px",
       xl: "1440px",
     },
+
     fontFamily: {
       acme: ["acme", "sans-serif"],
       aladin: ["aladin", "sans-serif"],
@@ -33,6 +34,7 @@ module.exports = {
         periwinkle: "#4583ee",
         brightPurple: "#d45df0",
         seafoam: "#93E9BE",
+        hotpink: "#f6248a",
       },
       keyframes: {
         gradient: {
