@@ -62,7 +62,7 @@
     to top,
     #9816ff,
     #f6248a,
-    #7051f9,
+    #613efc,
     #ff708d,
     #f6248a,
     #9816ff
@@ -70,15 +70,11 @@
   background-size: 300% 300%;
   background-clip: text;
 }
-.wrapper {
-  height: 200px;
-  display: flex;
-  gap: 20px;
+
+.download-icon {
+  fill: #ffffff; /* Set fill color to white */
 }
-.box img {
-  width: 100%;
-  height: 100%;
-}
+
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");

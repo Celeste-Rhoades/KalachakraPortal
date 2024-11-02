@@ -166,44 +166,52 @@
       </section>
       <section class="hero">
         <h3
-          class="p-11 text-center font-frederickaTheGreat text-5xl text-white"
+          class="p-11 text-center font-frederickaTheGreat text-white xs:text-3xl md:pt-11 md:text-4xl lg:text-5xl xl:text-5xl"
         >
           Take this antidote to come into Right Relationship
         </h3>
         <div>
-          <div class="sm: columns-1 md:columns-2">
-            <!-- <div class="flex items-center justify-center xs:flex-col">
-          <div class="container flex"> -->
+          <div
+            class="grid gap-4 xs:grid-cols-1 xs:px-20 lg:grid-cols-2 lg:px-11 xl:px-40"
+          >
             <!-- need to still work on these pictures -->
             <img
-              class="img aspect-square p-11"
+              class="zoom m-8 aspect-square h-auto w-auto lg:p-11"
               src="/images/antidoteEnglish.jpg"
             />
 
             <img
-              class="img aspect-square p-11"
+              class="zoom m-8 aspect-square h-auto w-auto lg:p-11"
               src="/images/antidoteEnglish2.jpg"
             />
           </div>
         </div>
-        <div class="p-8 xs:columns-1 md:columns-3">
+        <div class="grid gap-4 px-20 sm:grid-cols-1 lg:grid-cols-3">
           <img
-            class="img aspect-square py-2"
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-1 lg:order-1"
             src="/images/SpanishAntidote.jpg"
           />
           <img
-            class="img aspect-square py-2"
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-3 lg:order-2"
             src="/images/FrenchAntidote.jpg"
           />
           <img
-            class="img aspect-square py-2"
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-5 lg:order-3"
             src="/images/PortugeseAntidote.jpg"
           />
-        </div>
-        <div class="p-8 xs:columns-1 md:columns-3">
-          <img class="img py-2" src="/images/SpanishAntidote2.jpg" />
-          <img class="img py-2" src="/images/FrenchAntidote2(1).jpg" />
-          <img class="img py-2" src="/images/PortugeseAntidote2.jpg" />
+
+          <img
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-2 lg:order-4"
+            src="/images/SpanishAntidote2.jpg"
+          />
+          <img
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-4 lg:order-5"
+            src="/images/FrenchAntidote2(1).jpg"
+          />
+          <img
+            class="zoom m-8 aspect-square h-auto w-auto sm:order-6 lg:order-6"
+            src="/images/PortugeseAntidote2.jpg"
+          />
         </div>
       </section>
       <section class="hero">
@@ -295,7 +303,7 @@
           RELEASE THE MCKRAKEN!!!
         </h1>
         <p
-          class="text-seafoam text-center font-aladin drop-shadow-[0_1.8px_1.8px_rgba(0,0,0,0.88)] sm:text-lg md:text-2xl lg:text-5xl"
+          class="text-center font-aladin text-seafoam drop-shadow-[0_1.8px_1.8px_rgba(0,0,0,0.88)] sm:text-lg md:text-2xl lg:text-5xl"
         >
           ...gently
         </p>
@@ -420,6 +428,7 @@
         </p>
       </div>
     </footer>
+    <script src="js/medium-zoom.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

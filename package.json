@@ -6,6 +6,7 @@
     "build": "tailwindcss -i ./input.css -o ./css/main.css",
     "watch": "tailwindcss -i ./input.css -o ./css/main.css --watch --plugin"
   },
+  "type": "module",
   "author": "",
   "license": "ISC",
   "description": "",
@@ -13,5 +14,8 @@
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^3.4.13"
+  },
+  "dependencies": {
+    "medium-zoom": "^0.4.0"
   }
 }
