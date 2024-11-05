@@ -558,9 +558,9 @@ video {
   width: 100%;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
   .container {
-    max-width: 320px;
+    max-width: 220px;
   }
 }
 
@@ -610,10 +610,6 @@ video {
 
 .m-11 {
   margin: 2.75rem;
-}
-
-.m-8 {
-  margin: 2rem;
 }
 
 .mx-auto {
@@ -1167,9 +1163,9 @@ video {
     width: 100%;
   }
 
-  @media (min-width: 320px) {
+  @media (min-width: 220px) {
     .md\:container {
-      max-width: 320px;
+      max-width: 220px;
     }
   }
 
@@ -1208,13 +1204,33 @@ video {
   outline-offset: 2px;
 }
 
-@media (min-width: 320px) {
+@media (min-width: 220px) {
+  .xs\:order-1 {
+    order: 1;
+  }
+
   .xs\:order-2 {
     order: 2;
   }
 
   .xs\:order-3 {
     order: 3;
+  }
+
+  .xs\:order-4 {
+    order: 4;
+  }
+
+  .xs\:order-5 {
+    order: 5;
+  }
+
+  .xs\:order-6 {
+    order: 6;
+  }
+
+  .xs\:mb-11 {
+    margin-bottom: 2.75rem;
   }
 
   .xs\:mr-11 {
@@ -1231,6 +1247,10 @@ video {
 
   .xs\:h-full {
     height: 100%;
+  }
+
+  .xs\:w-96 {
+    width: 24rem;
   }
 
   .xs\:w-auto {
@@ -1313,36 +1333,8 @@ video {
 }
 
 @media (min-width: 480px) {
-  .sm\:order-1 {
-    order: 1;
-  }
-
-  .sm\:order-2 {
-    order: 2;
-  }
-
-  .sm\:order-3 {
-    order: 3;
-  }
-
-  .sm\:order-4 {
-    order: 4;
-  }
-
-  .sm\:order-5 {
-    order: 5;
-  }
-
-  .sm\:order-6 {
-    order: 6;
-  }
-
   .sm\:w-auto {
     width: auto;
-  }
-
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .sm\:self-center {
@@ -1361,7 +1353,7 @@ video {
 }
 
 @media (min-width: 768px) {
-  @media (min-width: 320px) {
+  @media (min-width: 220px) {
     .md\:xs\:object-cover {
       -o-object-fit: cover;
          object-fit: cover;
@@ -1462,6 +1454,10 @@ video {
 
   .lg\:order-6 {
     order: 6;
+  }
+
+  .lg\:m-8 {
+    margin: 2rem;
   }
 
   .lg\:mb-11 {
