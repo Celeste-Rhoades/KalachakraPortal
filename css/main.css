@@ -1264,14 +1264,14 @@ video {
     background-size: cover;
   }
 
-  .xs\:object-cover {
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .xs\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .xs\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .xs\:px-7 {
