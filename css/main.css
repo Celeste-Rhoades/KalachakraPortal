@@ -852,6 +852,11 @@ video {
   padding-bottom: 2rem;
 }
 
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -1252,6 +1257,14 @@ video {
     width: 100%;
   }
 
+  .xs\:w-screen {
+    width: 100vw;
+  }
+
+  .xs\:max-w-screen-xs {
+    max-width: 220px;
+  }
+
   .xs\:grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1262,6 +1275,11 @@ video {
 
   .xs\:bg-cover {
     background-size: cover;
+  }
+
+  .xs\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 
   .xs\:px-16 {
@@ -1287,8 +1305,16 @@ video {
     padding-bottom: 1rem;
   }
 
+  .xs\:pt-11 {
+    padding-top: 2.75rem;
+  }
+
   .xs\:pt-4 {
     padding-top: 1rem;
+  }
+
+  .xs\:pt-8 {
+    padding-top: 2rem;
   }
 
   .xs\:text-2xl {
@@ -1331,19 +1357,14 @@ video {
     align-self: center;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .sm\:text-lg {
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 }
 
@@ -1361,6 +1382,10 @@ video {
 
   .md\:order-2 {
     order: 2;
+  }
+
+  .md\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .md\:block {
@@ -1389,6 +1414,10 @@ video {
 
   .md\:bg-cover {
     background-size: cover;
+  }
+
+  .md\:bg-contain {
+    background-size: contain;
   }
 
   .md\:px-16 {
@@ -1491,6 +1520,11 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .lg\:object-contain {
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+
   .lg\:p-11 {
     padding: 2.75rem;
   }
@@ -1498,6 +1532,10 @@ video {
   .lg\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+
+  .lg\:pt-8 {
+    padding-top: 2rem;
   }
 
   .lg\:text-4xl {
@@ -1512,6 +1550,11 @@ video {
 
   .lg\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-6xl {
+    font-size: 3.75rem;
     line-height: 1;
   }
 }
