@@ -79,10 +79,6 @@
   background-clip: text;
 }
 
-.download-icon {
-  fill: #ffffff; /* Set fill color to white */
-}
-
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");

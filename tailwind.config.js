@@ -46,7 +46,7 @@ module.exports = {
         gradient: "gradient 6s linear infinite",
       },
       backgroundImage: {
-        key: "url('/images/key.jpg')",
+        key: "url('/images/key.png')",
       },
     },
   },
