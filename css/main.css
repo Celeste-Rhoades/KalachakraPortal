@@ -678,10 +678,6 @@ video {
   display: none;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
 .h-auto {
   height: auto;
 }
@@ -795,6 +791,14 @@ video {
 
 .bg-auto {
   background-size: auto;
+}
+
+.bg-contain {
+  background-size: contain;
+}
+
+.bg-cover {
+  background-size: cover;
 }
 
 .bg-clip-text {
@@ -1116,10 +1120,14 @@ video {
     to top,
 
     #ca03f7,
-    #f6248a,
     #3bd5d3,
     #8fd33b,
-    #f6248a,
+    #ca03f7,
+    #3bd5d3,
+    #8fd33b,
+    #ca03f7,
+    #3bd5d3,
+    #8fd33b,
     #ca03f7
   );
   background-size: 300% 300%;
@@ -1130,12 +1138,16 @@ video {
 .gradient-text3 {
   background: linear-gradient(
     to top,
-    #9816ff,
-    #f6248a,
-    #613efc,
-    #ff708d,
-    #f6248a,
-    #9816ff
+    #89289f,
+    #4583ee,
+    #c155e0,
+    #89289f,
+    #4583ee,
+    #c155e0,
+    #89289f,
+    #4583ee,
+    #c155e0,
+    #89289f
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
@@ -1273,6 +1285,11 @@ video {
        object-fit: cover;
   }
 
+  .md\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .md\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
@@ -1286,11 +1303,6 @@ video {
   .md\:px-64 {
     padding-left: 16rem;
     padding-right: 16rem;
-  }
-
-  .md\:px-14 {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
   }
 
   .md\:pb-0 {
@@ -1410,10 +1422,6 @@ video {
 
   .lg\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .lg\:pt-11 {
-    padding-top: 2.75rem;
   }
 
   .lg\:align-top {
