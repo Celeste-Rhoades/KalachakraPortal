@@ -6,45 +6,130 @@
     <link rel="stylesheet" href="/css/main.css" />
     <title>Kalachakra Portal</title>
   </head>
-  <body>
+  <body class="border-gradient">
     <nav class="hero flex justify-center">
       <div class="container">
-        <div class="flex items-center justify-evenly">
+        <div class="flex items-center justify-between">
           <!-- logo -->
 
-          <img class="pr-4" src="images/GrammyMantisLogo.png" alt="" />
+          <img class="" src="images/GrammyMantisLogo.png" alt="" />
 
           <h1
             class="text-center font-frederickaTheGreat text-3xl text-purple-800 sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl"
           >
             Kalachakra Portal
           </h1>
+
+          <!-- Hamburger Icon -->
+          <div class="hidden space-x-6">
+            <a
+              href="/images/PDF/EnglishGrammyMantisRecipeCard.pdf"
+              download="EnglishGrammyMantisRecipeCard"
+              >Grammy Mantis Antidote English</a
+            >
+            <a href="/images/PDF/SpanishGrammyMantisRecipeCard.pdf"
+              >Grammy Mantis Antidote Spanish</a
+            >
+            <a href="/images/PDF/FrenchGrammyMantis.pdf"
+              >Grammy Mantis Antidote French</a
+            >
+            <a href="/images/PDF/PortugueseGrammyMantisRecipeCard.pdf"
+              >Grammy Mantis Antidote Portugese</a
+            >
+            <a href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
+              >Grammy Mantis Instruction English</a
+            >
+            <a href="/images/PDF/Spanish2Antidote.pdf"
+              >Grammy Mantis Instruction Spanish</a
+            >
+            <a href="/images/PDF/French2grannyMantis.pdf"
+              >Grammy Mantis Instruction French</a
+            >
+            <a href="/images/PDF/PORT2GrannyMantis .pdf"
+              >Grammy Mantis Instruction Portugese</a
+            >
+            <a href="/images/PDF/GrammyMantis.pdf">Grammy Mantis</a>
+            <a href="/images/PDF/JaxxonMckraken.pdf">Jaxxon McKraken Poster</a>
+            <a href="/images/PDF/ourBeliefs.pdf"
+              >Our beliefs of disconnection Poster</a
+            >
+          </div>
           <!-- Button -->
-          <a
-            href=""
-            class="baseline hidden rounded-lg bg-purple-800 px-2 py-2 text-white hover:bg-blue-300 md:block"
-          >
-            Download Antidote
-          </a>
+          <button class="menu">
+            <a
+              href=""
+              class="btn baseline hidden rounded-lg bg-purple-800 px-2 py-2 text-white hover:bg-blue-300 md:block"
+            >
+              Download Antidote
+            </a>
+          </button>
           <!-- Hamburger Icon -->
           <button
             id="menu-btn"
-            class="hamburger block focus:outline-none md:hidden"
+            class="hamburger mr-8 block focus:outline-none md:hidden"
           >
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
           </button>
         </div>
+
         <!-- Mobile Menu -->
         <div class="md:hidden">
           <div
             id="menu"
-            class="absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-white py-8 font-bold drop-shadow-md sm:w-auto sm:self-center"
-          ></div>
+            class="sm:self-cente absolute left-6 right-6 mt-10 hidden flex-col items-center space-y-6 self-end bg-purple-800 py-8 font-bold text-white drop-shadow-md sm:w-auto"
+          >
+            <a
+              href="/images/PDF/EnglishGrammyMantisRecipeCard.pdf"
+              download="EnglishGrammyMantisRecipeCard"
+              >Grammy Mantis Antidote English</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/SpanishGrammyMantisRecipeCard.pdf"
+              >Grammy Mantis Antidote Spanish</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/FrenchGrammyMantis.pdf"
+              >Grammy Mantis Antidote French</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/PortugueseGrammyMantisRecipeCard.pdf"
+              >Grammy Mantis Antidote Portugese</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
+              >Grammy Mantis Instruction English</a
+            >
+            <a class="hover:text-white" href="/images/PDF/Spanish2Antidote.pdf"
+              >Grammy Mantis Instruction Spanish</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/French2grannyMantis.pdf"
+              >Grammy Mantis Instruction French</a
+            >
+            <a
+              class="hover:text-white"
+              href="/images/PDF/PORT2GrannyMantis .pdf"
+              >Grammy Mantis Instruction Portugese</a
+            >
+            <a class="hover:text-white" href="/images/PDF/GrammyMantis.pdf"
+              >Grammy Mantis</a
+            >
+            <a class="hover:text-white" href="/images/PDF/JaxxonMckraken.pdf"
+              >Jaxxon McKraken Poster</a
+            >
+            <a class="hover:text-white" href="/images/PDF/ourBeliefs.pdf"
+              >Our beliefs of disconnection Poster</a
+            >
+          </div>
         </div>
       </div>
-      <hr class="h-px w-auto border-brightCyan" />
     </nav>
     <main>
       <section class="hero border-gradient">
@@ -70,7 +155,7 @@
       <section>
         <!-- background image -->
         <div
-          class="h-500px bg-key bg-cover bg-center bg-no-repeat lg:h-[600px]"
+          class="h-[400px] bg-key bg-cover bg-center bg-no-repeat lg:h-[645px]"
         >
           <h2
             class="text p-2 text-center font-ewert text-2xl text-brightCyan md:text-3xl lg:text-5xl xl:text-6xl"
@@ -78,7 +163,7 @@
             KALACHAKRA IS THE WHEEL OF TIME
           </h2>
           <h3
-            class="container px-7 pt-28 text-left font-frederickaTheGreat text-2xl text-white md:px-16 md:text-4xl lg:pt-96 lg:text-4xl xl:text-5xl"
+            class="container px-7 text-left font-frederickaTheGreat text-2xl text-white xs:pt-64 md:px-16 md:text-4xl lg:pt-96 lg:text-4xl xl:text-5xl"
           >
             To open the Wheel of Time Portal,
           </h3>
