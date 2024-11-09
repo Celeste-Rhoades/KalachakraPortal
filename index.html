@@ -7,90 +7,89 @@
     <title>Kalachakra Portal</title>
   </head>
   <body class="border-gradient">
-    <nav class="hero flex justify-center">
-      <div class="container">
-        <div class="flex items-center justify-between">
-          <!-- logo -->
+    <nav
+      class="hero flex flex-row items-center justify-between md:justify-center"
+    >
+      <div
+        class="justify- container flex w-full flex-row items-center xs:justify-evenly xs:gap-12 md:justify-between"
+      >
+        <!-- logo -->
 
-          <img
-            class="xs:w-20 md:w-24 lg:w-32"
-            src="images/GrammyMantisLogo.png"
-            alt=""
-          />
+        <img
+          class="xs:w-20 md:w-24 lg:w-32"
+          src="images/GrammyMantisLogo.png"
+          alt=""
+        />
 
-          <h1
-            class="text-center font-frederickaTheGreat text-3xl text-purple-800 sm:text-2xl md:text-5xl lg:text-5xl xl:text-5xl"
+        <h1
+          class="text-center font-frederickaTheGreat text-3xl text-purple-800 sm:text-3xl md:text-5xl lg:text-5xl xl:text-5xl"
+        >
+          Kalachakra Portal
+        </h1>
+
+        <!-- Button -->
+
+        <!-- Hamburger Icon -->
+        <button id="menu-btn" class="hamburger block focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="">
+        <div
+          id="menu"
+          class="border-gradient-full absolute inset-x-0 mt-10 hidden flex-col items-center space-y-6 bg-purple-800 py-8 font-bold text-white drop-shadow-md xs:w-auto sm:mx-auto lg:w-1/2"
+        >
+          <a
+            href="/images/PDF/GrammyMantisRecipeCardEnglish.pdf"
+            download="EnglishGrammyMantisRecipeCard"
+            >Antidote English page 1</a
           >
-            Kalachakra Portal
-          </h1>
-
-          <!-- Button -->
-
-          <!-- Hamburger Icon -->
-          <button id="menu-btn" class="hamburger mr-8 block focus:outline-none">
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
-          </button>
-        </div>
-
-        <!-- Mobile Menu -->
-        <div class="">
-          <div
-            id="menu"
-            class="border-gradient-full absolute inset-x-0 mt-10 hidden flex-col items-center space-y-6 bg-purple-800 py-8 font-bold text-white drop-shadow-md xs:w-auto sm:mx-auto lg:w-1/2"
+          <a
+            class="hover:text-white"
+            href="/images/PDF/GrammyMantisRecipeCardSpanish.pdf"
+            >Antidote Spanish page 1</a
           >
-            <a
-              href="/images/PDF/GrammyMantisRecipeCardEnglish.pdf"
-              download="EnglishGrammyMantisRecipeCard"
-              >Antidote English page 1</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/GrammyMantisRecipeCardSpanish.pdf"
-              >Antidote Spanish page 1</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/GrammyMantisRecipeCardFrench.pdf"
-              >Antidote French page 1</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/GrammyMantisRecipeCardPortuguese.pdf"
-              >Antidote Portugese page 1</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
-            >
-              Antidote English page 2
-            </a>
-            <a class="hover:text-white" href="/images/PDF/Spanish2Antidote.pdf"
-              >Antidote Spanish page 2</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/French2grannyMantis.pdf"
-            >
-              Antidote French page 2</a
-            >
-            <a
-              class="hover:text-white"
-              href="/images/PDF/PORT2GrannyMantis.pdf"
-            >
-              Antidote Portugese page 2</a
-            >
-            <a class="hover:text-white" href="/images/PDF/GrammyMantis.pdf"
-              >Grammy Mantis</a
-            >
-            <a class="hover:text-white" href="/images/PDF/JaxxonMckraken.pdf"
-              >Medicine Show Poster</a
-            >
-            <a class="hover:text-white" href="/images/PDF/ourBeliefs.pdf"
-              >Our Beliefs of Disconnection Sign</a
-            >
-          </div>
+          <a
+            class="hover:text-white"
+            href="/images/PDF/GrammyMantisRecipeCardFrench.pdf"
+            >Antidote French page 1</a
+          >
+          <a
+            class="hover:text-white"
+            href="/images/PDF/GrammyMantisRecipeCardPortuguese.pdf"
+            >Antidote Portugese page 1</a
+          >
+          <a
+            class="hover:text-white"
+            href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
+          >
+            Antidote English page 2
+          </a>
+          <a class="hover:text-white" href="/images/PDF/Spanish2Antidote.pdf"
+            >Antidote Spanish page 2</a
+          >
+          <a
+            class="hover:text-white"
+            href="/images/PDF/French2grannyMantis.pdf"
+          >
+            Antidote French page 2</a
+          >
+          <a class="hover:text-white" href="/images/PDF/PORT2GrannyMantis.pdf">
+            Antidote Portugese page 2</a
+          >
+          <a class="hover:text-white" href="/images/PDF/GrammyMantis.pdf"
+            >Grammy Mantis</a
+          >
+          <a class="hover:text-white" href="/images/PDF/JaxxonMckraken.pdf"
+            >Medicine Show Poster</a
+          >
+          <a class="hover:text-white" href="/images/PDF/ourBeliefs.pdf"
+            >Our Beliefs of Disconnection Sign</a
+          >
         </div>
       </div>
     </nav>
@@ -118,15 +117,15 @@
       <section>
         <!-- background image -->
         <div
-          class="h-[400px] bg-key bg-cover bg-center bg-no-repeat lg:h-[645px]"
+          class="h-[440px] bg-key bg-cover bg-center bg-no-repeat lg:h-[645px]"
         >
           <h2
-            class="text p-2 text-center font-ewert text-2xl text-brightCyan md:text-3xl lg:text-5xl xl:text-6xl"
+            class="text pt-2 text-center font-ewert text-2xl text-brightCyan md:text-3xl lg:text-5xl xl:text-6xl"
           >
             KALACHAKRA IS THE WHEEL OF TIME
           </h2>
           <h3
-            class="container px-7 text-left font-frederickaTheGreat text-2xl text-white sm:pt-52 md:px-16 md:text-4xl lg:pt-96 lg:text-4xl xl:text-5xl"
+            class="container px-7 text-left font-frederickaTheGreat text-2xl text-white xs:pt-48 md:px-16 md:text-4xl lg:pt-96 lg:text-4xl xl:text-5xl"
           >
             To open the Wheel of Time Portal,
           </h3>
