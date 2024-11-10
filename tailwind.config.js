@@ -35,6 +35,7 @@ module.exports = {
         brightPurple: "#d45df0",
         seafoam: "#93E9BE",
         hotpink: "#f6248a",
+        darkBrown: "#120d09",
       },
       keyframes: {
         gradient: {
