@@ -712,6 +712,14 @@ video {
   animation: gradient 6s linear infinite;
 }
 
+.list-inside {
+  list-style-position: inside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -774,11 +782,6 @@ video {
 .bg-purple-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(107 33 168 / var(--tw-bg-opacity));
-}
-
-.bg-darkBrown {
-  --tw-bg-opacity: 1;
-  background-color: rgb(18 13 9 / var(--tw-bg-opacity));
 }
 
 .bg-key {
@@ -866,6 +869,11 @@ video {
   padding-right: 2rem;
 }
 
+.py-11 {
+  padding-top: 2.75rem;
+  padding-bottom: 2.75rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -938,6 +946,10 @@ video {
   vertical-align: middle;
 }
 
+.font-acme {
+  font-family: acme, sans-serif;
+}
+
 .font-aladin {
   font-family: aladin, sans-serif;
 }
@@ -979,6 +991,11 @@ video {
 
 .text-5xl {
   font-size: 3rem;
+  line-height: 1;
+}
+
+.text-7xl {
+  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -1045,6 +1062,10 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.bg-blend-darken {
+  background-blend-mode: darken;
 }
 
 .drop-shadow-\[0_1\.8px_1\.8px_rgba\(0\2c 0\2c 0\2c 0\.88\)\] {
@@ -1137,6 +1158,27 @@ video {
     #4583ee,
     #7977dd,
     #89289f
+  );
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+          background-clip: text;
+}
+
+.gradient-text4 {
+  background: linear-gradient(
+    to top,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
@@ -1258,6 +1300,10 @@ video {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
 }
 
 .focus\:outline-none:focus {
@@ -1538,6 +1584,11 @@ video {
 
   .lg\:text-8xl {
     font-size: 6rem;
+    line-height: 1;
+  }
+
+  .lg\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 }

@@ -87,7 +87,25 @@
   background-size: 300% 300%;
   background-clip: text;
 }
-
+.gradient-text4 {
+  background: linear-gradient(
+    to top,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb,
+    #2e0f38,
+    #1a2c54,
+    #8351a8,
+    #b45dbb
+  );
+  background-size: 300% 300%;
+  background-clip: text;
+}
 @font-face {
   font-family: "acme";
   src: url("/fonts/Acme-Regular.ttf"), format("truetype");

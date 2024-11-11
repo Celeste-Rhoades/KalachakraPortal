@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./*.html"],
+  content: ["./*.html", "./faq/*.html"],
   theme: {
     screens: {
       xs: "220px",
@@ -8,6 +8,13 @@ module.exports = {
       md: "768px",
       lg: "976px",
       xl: "1440px",
+    },
+    listStyleType: {
+      none: "none",
+      disc: "disc",
+      decimal: "decimal",
+      square: "square",
+      roman: "upper-roman",
     },
 
     fontFamily: {
