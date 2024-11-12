@@ -90,18 +90,21 @@
 .gradient-text4 {
   background: linear-gradient(
     to top,
-    #2e0f38,
-    #1a2c54,
-    #8351a8,
-    #b45dbb,
-    #2e0f38,
-    #1a2c54,
-    #8351a8,
-    #b45dbb,
-    #2e0f38,
-    #1a2c54,
-    #8351a8,
-    #b45dbb
+    #1a1859,
+    #241149,
+    #641159,
+    #b91b6f,
+    #f98f88,
+    #1a1859,
+    #241149,
+    #641159,
+    #b91b6f,
+    #f98f88,
+    #1a1859,
+    #241149,
+    #641159,
+    #b91b6f,
+    #f98f88
   );
   background-size: 300% 300%;
   background-clip: text;
