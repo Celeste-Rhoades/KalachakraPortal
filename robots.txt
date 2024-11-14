@@ -1,1 +1,3 @@
 Sitemap: https://kalachakraportal.com/sitemap.xml
+User-agent: *
+Disallow:
