@@ -1031,6 +1031,11 @@ video {
   color: rgb(212 93 240 / var(--tw-text-opacity));
 }
 
+.text-indigo-800 {
+  --tw-text-opacity: 1;
+  color: rgb(55 48 163 / var(--tw-text-opacity));
+}
+
 .text-purple-800 {
   --tw-text-opacity: 1;
   color: rgb(107 33 168 / var(--tw-text-opacity));
@@ -1162,21 +1167,21 @@ video {
 .gradient-text4 {
   background: linear-gradient(
     to top,
-    #1a1859,
-    #241149,
-    #641159,
-    #b91b6f,
-    #f98f88,
-    #1a1859,
-    #241149,
-    #641159,
-    #b91b6f,
-    #f98f88,
-    #1a1859,
-    #241149,
-    #641159,
-    #b91b6f,
-    #f98f88
+    #1d1640,
+    #3d276f,
+    #001d83,
+    #39977f,
+    #8aed07,
+    #1d1640,
+    #3d276f,
+    #001d83,
+    #39977f,
+    #8aed07,
+    #1d1640,
+    #3d276f,
+    #001d83,
+    #39977f,
+    #8aed07
   );
   background-size: 300% 300%;
   -webkit-background-clip: text;
@@ -1314,12 +1319,12 @@ video {
     width: 5rem;
   }
 
-  .xs\:w-auto {
-    width: auto;
-  }
-
   .xs\:w-32 {
     width: 8rem;
+  }
+
+  .xs\:w-auto {
+    width: auto;
   }
 
   .xs\:justify-evenly {

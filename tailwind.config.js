@@ -43,6 +43,7 @@ module.exports = {
         seafoam: "#93E9BE",
         hotpink: "#f6248a",
         darkBrown: "#120d09",
+        celeste: "#4997d0",
       },
       keyframes: {
         gradient: {
