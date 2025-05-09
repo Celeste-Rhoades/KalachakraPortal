@@ -2,13 +2,6 @@
 module.exports = {
   content: ["./*.html", "./faq/*.html"],
   theme: {
-    screens: {
-      xs: "220px",
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
-    },
     listStyleType: {
       none: "none",
       disc: "disc",
