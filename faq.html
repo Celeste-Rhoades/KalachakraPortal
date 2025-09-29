@@ -57,54 +57,83 @@
       <div class="">
         <div
           id="menu"
-          class="border-gradient-full absolute inset-x-0 mt-10 hidden flex-col items-center space-y-6 text-wrap bg-purple-800 py-8 font-bold text-white drop-shadow-md xs:w-auto sm:mx-auto lg:w-1/2"
+          class="border-gradient-full xs:w-auto absolute inset-x-0 mt-10 flex hidden flex-col items-center space-y-6 text-wrap bg-purple-800 py-8 font-bold text-white drop-shadow-md sm:mx-auto lg:w-1/2"
         >
-          <a href="/">Kalachakra Portal</a>
+          <a href="/index.html">Kalachakra Portal </a>
+
           <a
             href="/images/PDF/GrammyMantisRecipeCardEnglish.pdf"
-            download="EnglishGrammyMantisRecipeCard"
+            download="GrammyMantisRecipeCardEnglish"
             >Antidote English page 1</a
           >
+
           <a
             class="hover:text-white"
-            href="/images/PDF/GrammyMantisRecipeCardSpanish.pdf"
+            href="/images/PDF/SpanishGrammyMantisRecipeCard.pdf"
+            download="SpanishGrammyMantisRecipeCard"
             >Antidote Spanish page 1</a
           >
+
           <a
             class="hover:text-white"
-            href="/images/PDF/GrammyMantisRecipeCardFrench.pdf"
+            href="/images/PDF/FrenchGrammyMantis.pdf"
+            download="FrenchGrammyMantis"
             >Antidote French page 1</a
           >
+
           <a
             class="hover:text-white"
-            href="/images/PDF/GrammyMantisRecipeCardPortuguese.pdf"
+            href="/images/PDF/PortugueseGrammyMantisRecipe.pdf"
+            download="PortugueseGrammyMantisRecipe"
             >Antidote Portuguese page 1</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
+            download="PortugueseGrammyMantisRecipe"
+            >Antidote English page 2</a
           >
-            Antidote English page 2
-          </a>
-          <a class="hover:text-white" href="/images/PDF/Spanish2Antidote.pdf"
+
+          <a
+            class="hover:text-white"
+            href="/images/PDF/Spanish2Antidote.pdf"
+            download="Spanish2Antidote"
             >Antidote Spanish page 2</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/French2grannyMantis.pdf"
+            download="French2grannyMantis"
+            >Antidote French page 2</a
           >
-            Antidote French page 2</a
+
+          <a
+            class="hover:text-white"
+            href="/images/PDF/PORT2GrannyMantis.pdf"
+            download="PORT2GrannyMantis"
+            >Antidote Portuguese page 2</a
           >
-          <a class="hover:text-white" href="/images/PDF/PORT2GrannyMantis.pdf">
-            Antidote Portuguese page 2</a
-          >
-          <a class="hover:text-white" href="/images/PDF/GrammyMantis.pdf"
+
+          <a
+            class="hover:text-white"
+            href="/images/PDF/GrammyMantis.pdf"
+            download="GrammyMantis"
             >Grammy Mantis</a
           >
-          <a class="hover:text-white" href="/images/PDF/JaxxonMckraken.pdf"
+
+          <a
+            class="hover:text-white"
+            href="/images/PDF/MedicineShowPoster.pdf"
+            download="MedicineShowPoster"
             >Medicine Show Poster</a
           >
-          <a class="hover:text-white" href="/images/PDF/ourBeliefs.pdf"
+
+          <a
+            class="hover:text-white"
+            href="/images/PDF/ourBeliefs.pdf"
+            download="ourBeliefs"
             >Our Beliefs of Disconnection Sign</a
           >
         </div>
@@ -206,6 +235,37 @@
         </p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+
+    <script>
+      // Hamburger Menu Toggle with Click Outside to Close
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu on button click
+      menuBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        menuBtn.classList.toggle("open");
+        menu.classList.toggle("hidden");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+          if (!menu.classList.contains("hidden")) {
+            menu.classList.add("hidden");
+            menuBtn.classList.remove("open");
+          }
+        }
+      });
+
+      // Close menu when clicking menu links
+      const menuLinks = menu.querySelectorAll("a");
+      menuLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.add("hidden");
+          menuBtn.classList.remove("open");
+        });
+      });
+    </script>
   </body>
 </html>

@@ -60,74 +60,84 @@
       </div>
 
       <!-- Mobile Menu -->
+      <!-- Mobile Menu -->
+      <!-- Mobile Menu -->
       <div class="">
         <div
           id="menu"
-          class="border-gradient-full xs:w-auto absolute inset-x-0 mt-10 hidden flex-col items-center space-y-6 bg-purple-800 py-8 font-bold text-white drop-shadow-md sm:mx-auto lg:w-1/2"
+          class="border-gradient-full xs:w-auto absolute inset-x-0 mt-10 flex hidden flex-col items-center space-y-6 text-wrap bg-purple-800 py-8 font-bold text-white drop-shadow-md sm:mx-auto lg:w-1/2"
         >
           <a href="/faq.html">Kalachakra Portal FAQs </a>
+
           <a
             href="/images/PDF/GrammyMantisRecipeCardEnglish.pdf"
             download="GrammyMantisRecipeCardEnglish"
             >Antidote English page 1</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/SpanishGrammyMantisRecipeCard.pdf"
             download="SpanishGrammyMantisRecipeCard"
             >Antidote Spanish page 1</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/FrenchGrammyMantis.pdf"
             download="FrenchGrammyMantis"
             >Antidote French page 1</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/PortugueseGrammyMantisRecipe.pdf"
             download="PortugueseGrammyMantisRecipe"
             >Antidote Portuguese page 1</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/EnglishGrannyMantisRecipes2.pdf"
             download="PortugueseGrammyMantisRecipe"
+            >Antidote English page 2</a
           >
-            Antidote English page 2
-          </a>
+
           <a
             class="hover:text-white"
             href="/images/PDF/Spanish2Antidote.pdf"
             download="Spanish2Antidote"
             >Antidote Spanish page 2</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/French2grannyMantis.pdf"
             download="French2grannyMantis"
+            >Antidote French page 2</a
           >
-            Antidote French page 2</a
-          >
+
           <a
             class="hover:text-white"
             href="/images/PDF/PORT2GrannyMantis.pdf"
             download="PORT2GrannyMantis"
+            >Antidote Portuguese page 2</a
           >
-            Antidote Portuguese page 2</a
-          >
+
           <a
             class="hover:text-white"
             href="/images/PDF/GrammyMantis.pdf"
             download="GrammyMantis"
             >Grammy Mantis</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/MedicineShowPoster.pdf"
             download="MedicineShowPoster"
             >Medicine Show Poster</a
           >
+
           <a
             class="hover:text-white"
             href="/images/PDF/ourBeliefs.pdf"
@@ -239,9 +249,9 @@
           The co-enslaving belief system creates an infected soul frequency
           called trauma. In relationships with people and resources, it creates
           trauma bondage. It is fake, harmful, misleading (snake oil)
-          connection. It is made of separation and scarcity known as “dualism"
+          connection. It is made of separation and scarcity known as "dualism"
           in philosophical and spiritual terms. The beliefs that create trauma
-          are: “We are separate, There is not enough / I am not enough." We feel
+          are: "We are separate, There is not enough / I am not enough." We feel
           them as emotions like shame, guilt, fear, anxiety, self-loathing,
           judgement, self pity, unworthiness, anger, depression, rage, etc..
           When combined, they are the ingredients of self harm, addiction,
@@ -254,7 +264,7 @@
           id="soul-parasite"
         >
           To believe in separation and scarcity is to lose soul. It is called
-          “soul loss." There is a soul parasite feasting on our species. It eats
+          "soul loss." There is a soul parasite feasting on our species. It eats
           lost soul.
         </p>
         <p class="px-16 py-4 font-cormorantInfantReg text-xl lg:px-64">
@@ -288,7 +298,7 @@
           />
         </div>
       </section>
-      <section class="hero border-gradient">
+      <section class="hero border-gradient pb-16">
         <h3
           class="px-11 pt-11 text-center font-frederickaTheGreat text-3xl text-white md:pt-11 md:text-4xl lg:pt-8 lg:text-5xl xl:text-5xl"
         >
@@ -671,7 +681,48 @@
         </p>
       </div>
     </footer>
+
     <script src="js/medium-zoom.min.js"></script>
-    <script src="js/script.js"></script>
+
+    <script>
+      // Wait for DOM to be ready
+      const menuBtn = document.getElementById("menu-btn");
+      const menu = document.getElementById("menu");
+
+      // Toggle menu on button click
+      menuBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        menuBtn.classList.toggle("open");
+        menu.classList.toggle("hidden");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", function (event) {
+        if (!menu.contains(event.target) && !menuBtn.contains(event.target)) {
+          if (!menu.classList.contains("hidden")) {
+            menu.classList.add("hidden");
+            menuBtn.classList.remove("open");
+          }
+        }
+      });
+
+      // Close menu when clicking menu links
+      const menuLinks = menu.querySelectorAll("a");
+      menuLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          menu.classList.add("hidden");
+          menuBtn.classList.remove("open");
+        });
+      });
+
+      // Initialize zoom after everything else
+      if (typeof mediumZoom !== "undefined") {
+        mediumZoom(".zoom", {
+          margin: 24,
+          background: "#000000",
+          scrollOffset: 0,
+        });
+      }
+    </script>
   </body>
 </html>
